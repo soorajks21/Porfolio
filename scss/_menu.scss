@@ -123,6 +123,39 @@
       color: $secondary-color;
     }
   }
+
+  .nav-link > .fas + .hometxt,
+  .nav-link:hover > .fas {
+    display: none;
+  }
+  .nav-link:hover > .fas + .hometxt {
+    display: inherit;
+    transition: ease-out;
+  }
+
+  .nav-link > .fas + .abouttxt,
+  .nav-link:hover > .fas {
+    display: none;
+  }
+  .nav-link:hover > .fas + .abouttxt {
+    display: inherit;
+  }
+
+  .nav-link > .fas + .worktxt,
+  .nav-link:hover > .fas {
+    display: none;
+  }
+  .nav-link:hover > .fas + .worktxt {
+    display: inherit;
+  }
+
+  .nav-link > .fas + .contacttxt,
+  .nav-link:hover > .fas {
+    display: none;
+  }
+  .nav-link:hover > .fas + .contacttxt {
+    display: inherit;
+  }
 }
 
 //Delay each nav item slide by 0.1s

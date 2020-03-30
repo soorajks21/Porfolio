@@ -77,6 +77,27 @@
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #eece1a; }
+  .menu .nav-link > .fas + .hometxt,
+  .menu .nav-link:hover > .fas {
+    display: none; }
+  .menu .nav-link:hover > .fas + .hometxt {
+    display: inherit;
+    transition: ease-out; }
+  .menu .nav-link > .fas + .abouttxt,
+  .menu .nav-link:hover > .fas {
+    display: none; }
+  .menu .nav-link:hover > .fas + .abouttxt {
+    display: inherit; }
+  .menu .nav-link > .fas + .worktxt,
+  .menu .nav-link:hover > .fas {
+    display: none; }
+  .menu .nav-link:hover > .fas + .worktxt {
+    display: inherit; }
+  .menu .nav-link > .fas + .contacttxt,
+  .menu .nav-link:hover > .fas {
+    display: none; }
+  .menu .nav-link:hover > .fas + .contacttxt {
+    display: inherit; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -256,6 +277,24 @@ main {
   background: black;
   padding: 1rem;
   height: 60px; }
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); } }
 
 @media screen and (min-width: 1171px) {
   .projects {
